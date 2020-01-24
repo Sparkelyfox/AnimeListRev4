@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Matt's Anime</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="WholeDocument">
+            <div class="btnContainer">
+                <!-- Tab Links -->
+                <button class="Tabbtn" id="btnWatching" onclick="openButton(this, 'divtblWatching') ; BGWatching()">Watching</button>
+                <button class="Tabbtn" id="btnCompleted" onclick="openButton(this, 'divtblCompleted') ; BGCompleted()">Completed</button>
+                <button class="Tabbtn" id="btnOnHold" onclick="openButton(this, 'divtblOnHold') ; BGOnHold()">On Hold</button>
+                <button class="Tabbtn" id="btnDropped" onclick="openButton(this, 'divtblDropped') ; BGDropped()">Dropped</button>
+                <button class="Tabbtn" id="btnPlanToWatch" onclick="openButton(this, 'divtblPlanToWatch') ; BGPlanToWatch()">Plan To Watch</button>
+            </div>
+            <div id="divtblWatching" class="tblContent">
+                <!-- Watching Banner -->
+                <div class="BannerContainer">1
+                    <img src="images/ToukaWatching.png">
+                </div>
+                <!-- Watching Table -->
+                <table class="tbl">
+                    <thead class="tblHead">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Cowboy Bebop</td>
+                                <td>Rating</td>
+                                <td>Type</td>
+                                <td>Progress</td>
+                            </tr>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Eromanga Sensei</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Neon Genesis Evangelion</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Nanatsu No Taizai</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="divtblCompleted" class="tblContent">
+                <!-- Completed Banner -->
+                <div class="BannerContainer">
+                    <img src="images/KanekiCompleted.png">
+                </div>
+                <!-- Completed Table -->
+                <table class="tbl">
+                    <thead class="tblHead">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Another</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Boku Dake Ga Inai Machi</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Boko No Hero Academia</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Boko No Hero Academia 2nd Season</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Boko No Hero Academia 3rd Season</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Death Note</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Is It Wrong To Pick Up Girls In A Dungeon?</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Elfen Lied</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Gate: Jietai Kanochi Nite, Kaku Tatakaeri</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Gate: Jietai Kanochi Nite, Kaku Tatakaeri 2nd Season</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Goblin Slayer</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Howl No Ugoku Shiro</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Karigurashi No Arrietty</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Kimetsu No Yaiba</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>KiseiJuu: Sei No Kakuritsu</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Kobayashi-San Chi No Maid Dragon</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Kono Subarashii Sekai Ni Shukufuku Wo!</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Kono Subarashii Sekai Ni Shukufuku Wo! 2nd Season</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>Little Witch Academia</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Majo No Takkyuubin</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>No Game No Life</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>One Punch Man</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>Ookami Kodomo No Ame To Yuki</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>Plastic Memories</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>Psycho Pass</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>Sen To Chihiro No Kamikakushi</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>Shingeki No Kyojin</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>Sword Art Online</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>Sword Art Online 2nd Season</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>Toko Wo Kakeru Shoujo</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>Tokyo Ghoul</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>Tokyo Ghoul √A</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>Tonari No Totoro</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>Watashi Ga Motenai No Wa Dou Kangaetemo Omaera Ga Warui!</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>Yu☆Gi☆Oh! Duel Monsters</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="divtblOnHold" class="tblContent">
+                <!-- On Hold Banner -->
+                <div class="BannerContainer">
+                    <img src="images/UtaOnHold1.png">
+                </div>
+                <!-- On Hold Table -->
+                <table class="tbl">
+                    <thead class="tblHead">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Darling In The Franxx</td>
+                                <td>Rating</td>
+                                <td>Type</td>
+                                <td>Progress</td>
+                            </tr>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jojo No Kimyou No Bouken</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Overlord</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Psycho-Pass 2nd Season</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Tokyo Ghoul: RE</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="divtblDropped" class="tblContent">
+                <!-- Dropped Banner -->
+                <div class="BannerContainer">
+                    <img src="images/JuuzouDropped.png">
+                </div>
+                <!-- Dropped Table -->
+                <table class="tbl">
+                    <thead class="tblHead">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Black Clover</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FLCL</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Satsuriku No Tenshi</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Sword Art Online: Alicization</td>
+                            <td>Rating</td>
+                            <td>Type</td>
+                            <td>Progress</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="divtblPlanToWatch" class="tblContent">
+            <!-- Plan To Watch Banner -->
+            <div class="BannerContainer">
+                <img src="images/AyatoPlanToWatch.png">
+            </div>
+            <!-- Plan To Watch Table -->
+            <table class="tbl">
+                <thead class="tblHead">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Black Lagoon</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Black Lagoon: The Second Barage</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Boku No Hero Academia 4th Season</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Darker Than Black: Kuro No KeiyaKusha</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Dr. Stone</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Is It Wrong To Pick Up Girls In A Dungeon? 2nd Season</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Kobayashi-San Chi No Maid Dragon 2nd Season</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Kotoura-San</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>One Punch Man 2nd Season</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Sewayaki Kitsune No Senko-San</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Shingeki No Kyojin 2nd Season</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Usagi Drop</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Youjo Senki</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Yu☆Gi☆Oh!</td>
+                        <td>Rating</td>
+                        <td>Type</td>
+                        <td>Progress</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            function openButton(evt, btnName) {
+            // Declares all variables
+            var i, tblContent, Tabbtn;
+            // Gets all elements with the class of "tblContent" and sets display: none;
+            tblContent = document.getElementsByClassName("tblContent");
+            for (i = 0; i < tblContent.length; i++) {
+                tblContent[i].style.display = "none";
+            }
+            // Gets all elements with the class of "Tabbtn" and removes the class "active"
+            Tabbtn = document.getElementsByClassName("Tabbtn");
+            for (i = 0; i < Tabbtn.length; i++) {
+                Tabbtn[i].className = Tabbtn[i].className.replace(" active", "");
+            }
+            // Shows the current selected tblContent (tab) and adds an active class to the button that opened the tab
+            document.getElementById(btnName).style.display = "block";
+            }
+            // Script to change the background image of the body.
+            function BGWatching() {
+                document.body.style.backgroundImage = "url('images/ToukaWallpaper7.png')";
+            }
+            function BGCompleted() {
+                document.body.style.backgroundImage = "url('images/KanekiWallpaper8.png')";
+            }
+            function BGOnHold() {
+                document.body.style.backgroundImage = "url('images/UtaWallpaper5.png')";
+            }
+            function BGPlanToWatch() {
+                document.body.style.backgroundImage = "images/";
+            }
+            function BGDropped() {
+                document.body.style.backgroundImage = "url('images/JuuzouSuzuyaWallpaper5.png')";
+            }
+        </script>
+    </body>
+</html>

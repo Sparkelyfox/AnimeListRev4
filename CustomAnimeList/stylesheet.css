@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "monsterrat", sans-serif;
+}
+
+body{
+    background-image: url(images/KanekiWallpaper2.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.WholeDocument {
+    width: 1050px;
+}
+
+.btnContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.divtbl{
+    width: 100%;
+}
+
+.tbl{
+    border: 4px solid #6a4b74;
+    background-color: #745e84;
+    float: left;
+    margin: 20px 0px 0px 0px;
+    font-weight: 700;
+    width: 1000px;
+    color: #3e2c44;
+}
+
+.tblContent {
+    display: none;
+    width: 1000px;
+}
+
+.tblHead{
+    background-color: #6a4b74;
+}
+
+.Tabbtn{
+    margin: 0px 50px 0px 0px;
+    width: 200px;
+    height: 60px;
+    border: 4px solid;
+    color: #3e2c44;
+    border-color:#6a4b74;
+    background: #745e84;
+    font-weight:700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+.BannerContainer{
+    align-self: flex-end;
+}
+
+.Tabbtn::before,.Tabbtn::after{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: #745e84;
+    transform: skewX(50deg);
+    transition: .4s linear; 
+}
+
+.Tabbtn::before{
+    top: -4px;
+    left: 10%;
+}
+
+.Tabbtn::after{
+    bottom: -4px;
+    right: 10%;
+}
+
+.Tabbtn:hover::before{
+    left: 80%;
+}
+
+.Tabbtn:hover::after{
+    right: 80%;
+}
+.TabBtn.active{
+    background-color: #ccc;
+}
